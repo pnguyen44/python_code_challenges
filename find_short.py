@@ -5,3 +5,7 @@
 
 def find_short(s):
     return len(min(s.split(' '), key=len))
+
+# Alternative solutions:
+# def find_short(s):
+#     return min(len(x) for x in s.split(' '))

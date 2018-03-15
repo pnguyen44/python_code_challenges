@@ -20,3 +20,9 @@ def count_sheeps(arrayOfSheeps):
         if x == True:
             count += 1
     return count
+
+# Alternative Solution:
+
+# def count_sheeps(arrayOfSheeps):
+#     return arrayOfSheeps.count(True)
+#

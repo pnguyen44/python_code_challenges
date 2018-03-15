@@ -13,3 +13,7 @@ def accum(s):
     for i, v in enumerate(s):
         result += (s[i] * (i +1)).title() + '-'
     return result[: -1]
+
+# Alternative Solution:
+# def accum(s):
+#     return '-'.join( (v * c).title() for c, v in enumerate(s, 1))

@@ -28,7 +28,6 @@
 #
 # If a or b are empty the result is evident by itself.
 
-
 def comp(array1, array2):
     if array1 != None and array2 != None:
         array1.sort()
@@ -37,3 +36,10 @@ def comp(array1, array2):
         return  True if(array2 == sqr) else False
     else:
         return False
+
+# Alternative Solution:
+# def comp(array1, array2):
+#     try:
+#         return sorted([x ** 2 for x in array1]) == sorted(array2)
+#     except:
+#         return False

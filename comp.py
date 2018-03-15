@@ -27,3 +27,13 @@
 # If a or b are nil (or null or None), the problem doesn't make sense so return false.
 #
 # If a or b are empty the result is evident by itself.
+
+
+def comp(array1, array2):
+    if array1 != None and array2 != None:
+        array1.sort()
+        array2.sort()
+        sqr = list(map(lambda x: x ** 2, array1))
+        return  True if(array2 == sqr) else False
+    else:
+        return False

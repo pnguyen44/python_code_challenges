@@ -13,3 +13,8 @@
 
 def summation(num):
     return reduce(lambda x,y: x + y, range(num + 1))
+
+
+# Alternative Solution:
+# def summation(num):
+#     return sum(range(1,num+1))

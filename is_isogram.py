@@ -6,4 +6,4 @@
 # is_isogram("moOse" ) == false # -- ignore letter case
 
 def is_isogram(string):
-    return True if (len(set(string.lower())) == len(string.lower())) else False
+    return len(set(string.lower())) == len(string)
